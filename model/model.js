@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://root:root@ds157584.mlab.com:57584/chat");
+mongoose.connect("mongodb://admin:admin@ds157584.mlab.com:57584/chat");
 
 mongoose.connection.on('open', function (ref) {
     console.log('Connected to mongo server.');
